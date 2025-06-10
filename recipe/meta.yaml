@@ -33,7 +33,6 @@ test:
     - python -m unittest -v tests.py
   requires:
     - pip
-    - pytest
 
 about:
   home: https://github.com/toastdriven/pylev
