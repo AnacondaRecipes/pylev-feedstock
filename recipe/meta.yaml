@@ -22,9 +22,6 @@ requirements:
   run:
     - python
 
-# fixture 'self' not found
-{% set tests_to_skip = "test_fn" %}
-
 test:
   source_files:
     - tests.py
