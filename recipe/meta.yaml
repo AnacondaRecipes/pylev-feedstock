@@ -33,7 +33,7 @@ test:
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest -v -k "not {{ tests_to_skip }}" tests.py
+    - python -m unittest -v tests.py
   requires:
     - pip
     - pytest
